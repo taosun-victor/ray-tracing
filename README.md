@@ -29,4 +29,4 @@ The OBJ format is a simple text file format for 3D surface meshes. By taking adv
 
 
 ## Reference
-[ref-url]: https://raytracing.github.io/
+![ref-url](https://raytracing.github.io)
