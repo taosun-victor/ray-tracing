@@ -27,3 +27,6 @@ It is shown that the bvh based container improves the time complexity from O(n) 
 The OBJ format is a simple text file format for 3D surface meshes. By taking advantage of the triangle shape implementation in Part1, it is possible to parse and render objects represented by the .OBJ format.
 ![Alt text](./images/obj.png?raw=true "Objs")
 
+
+## Reference
+[ref-url]: https://raytracing.github.io/
