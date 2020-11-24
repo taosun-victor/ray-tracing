@@ -14,9 +14,7 @@ would generate the snapshot of the basic shapes and effects as the following.
 
 ## Bounding Volume Hierarchy
 In order to accelerate the ray tracing process with sub-linear time complexity, the bounding volume hierarchy (BVH) is implemented. The performance of BVH is compared with naive array-based containers with total number of objects as of 100, 1,000 and 10,000. The images and the time spent are listed as the following.
-![Alt text](./images/output-108.jpg?raw=true "108")
-![Alt text](./images/output-1000.jpg?raw=true "1000")
-![Alt text](./images/output-10648.jpg?raw=true "10648")
+![Alt text](./images/bvh.png?raw=true "bvh")
 
 
 
