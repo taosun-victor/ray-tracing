@@ -12,11 +12,16 @@ would generate the snapshot of the basic shapes and effects as the following.
 ![Alt text](./images/basic.png?raw=true "Basics")
 
 
-## Execution
-For the current Crane system, one only has one copy of the source text file at the master node. For a streaming job, such as using filter, one should go to every node's local directory and type the following:
-```
-./filter -fpath=FILE_PATH -word=KEY -numWorker=NUM_WORKERS
-```
+## Bounding Volume Hierarchy
+In order to accelerate the ray tracing process with sub-linear time complexity, the bounding volume hierarchy (BVH) is implemented. The performance of BVH is compared with naive array-based containers with total number of objects as of 100, 1,000 and 10,000. The images and the time spent are listed as the following.
+![Alt text](./images/output-108.jpg?raw=true "108")
+![Alt text](./images/output-1000.jpg?raw=true "1000")
+![Alt text](./images/output-10648.jpg?raw=true "10648")
+
+
+
+
+
 one would be able to set up the streaming job and let every worker filter the incoming string with the specified KEY.
 
 When one wants to do transform for the streaming job, he/she should go to every node's local directory and type the following:
