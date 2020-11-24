@@ -9,7 +9,7 @@ clang++ main-orth.cpp -o main-orth
 ./main-orth > basic.ppm
 ```
 would generate the snapshot of the basic shapes and effects as the following.
-![Screenshot](/images/basic.ppm)
+![Alt text](./images/basic.png?raw=true "Basics")
 
 
 ## Execution
