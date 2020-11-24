@@ -24,5 +24,6 @@ In order to accelerate the ray tracing process with sub-linear time complexity, 
 It is shown that the bvh based container improves the time complexity from O(n) to O(logn) compared with native array-based containers.
 
 ## Rendering obj files
-
+The OBJ format is a simple text file format for 3D surface meshes. By taking advantage of the triangle shape implementation in Part1, it is possible to parse and render objects represented by the .OBJ format.
+![Alt text](./images/obj.png?raw=true "Objs")
 
