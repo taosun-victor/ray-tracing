@@ -1,0 +1,11 @@
+108
+list: 142.934 seconds
+bvh : 35.4273 seconds
+
+1000
+list: 1210.45
+bvh : 65.709 seconds
+
+10648
+list: 13278.3 seconds
+bvh : 187.107 seconds

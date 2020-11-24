@@ -1,0 +1,34 @@
+#ifndef HITABLE_H
+#define HITABLE_H 
+
+#include <iostream>
+#include "ray.h"
+#include "aabb.h"
+
+using namespace std;
+
+/*
+a. modified from https://github.com/petershirley/raytracinginoneweekend/blob/master/hitable.h
+b. using glm/vec3 to deal with 3d vectors
+c. adding bounding_box pure virtual function, for bvh node constructions.
+*/
+
+class material;
+
+struct hit_record
+{
+    float t;  
+    glm::vec3 p;
+    glm::vec3 normal; 
+    material *mat_ptr;
+};
+
+
+class hitable  {
+    public:
+        virtual bool hit(const ray & r, float t_min, float t_max, hit_record & rec) const = 0;
+        virtual bool bounding_box(float t0, float t1, aabb& box) const = 0;	
+};
+
+#endif
+

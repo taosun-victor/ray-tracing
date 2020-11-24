@@ -1,0 +1,1 @@
+clang++ vec3_test.cpp -std=c++1y -o vec3
